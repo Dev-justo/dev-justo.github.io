@@ -2,10 +2,54 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css">
 	<title>João Justo</title>
 </head>
 <body>
-	hello world
+	<div class="container">
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">home</a>
+						<a href="#">sobre mim</a>
+						<a href="#">projetos</a>
+						<a href="#">contato</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!-- MAIN BANNER SECTION -->
+			<section class="mainBanner" id="mainBanner">
+				<h1>João Justo</h1>
+				<h2>Desenvolvedor fullstack</h2>
+			</section>
+
+			<!-- ABOUT ME SECTION -->
+			<section class="aboutMe" id="aboutMe">
+				<h1>Sobre mim</h1>
+			</section>
+
+			<!-- PROJECT SECTION -->
+			<section class="myProjects" id="myProjects">
+				<h1>Meus projetos</h1>
+			</section>
+
+			<!-- CONTACT SECTION -->
+			<section class="myContacts" id="myContacts">
+				<h1>Contato</h1>
+				<form class="formContact">
+					<label for="name">Nome</label>
+					<input type="text" name="name" id="name" placeholder="Nome">
+					<label for="email">E-mail</label>
+					<input type="email" name="email" id="email" placeholder="E-mail">
+					<textarea name="message" id="message" placeholder="Sua mensagem aqui..."></textarea>
+				</form>
+			</section>
+		</main>
+	</div>
 </body>
 </html>
