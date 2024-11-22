@@ -1,1 +1,111 @@
 *{margin: 0;padding: 0;}
+
+/* ======== M E N U */
+header{
+	background-color: rgb(27, 32, 56);
+	position: fixed;
+	width: 100vw;
+}
+
+.navMenu{
+	display: flex;
+	justify-content: space-between;
+	padding: 1.2em;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.navMenu li{
+	display: inline-block;
+	text-decoration: none;
+}
+
+.navMenu li a{
+	text-decoration: none;
+	color: white;
+}
+
+/* ======== I M A G E S */
+body{
+	background: 
+				url("../assets/images/mainBanner.jpeg")
+				no-repeat center center / cover;
+	text-align: center;
+}
+
+.profilePicture{
+		width:150px;
+		border-radius:0 0 10px 10px;
+	}
+
+/* ======== S E C T I O N S*/
+
+section{
+	border-bottom: 1px solid rgb(27, 32, 56);
+	padding: 50px 0;
+}
+
+/* === A B O U T  M E === */
+.aboutMe{
+	background-color: rgb(42, 57, 115);
+	color: white;
+}
+
+/* === M Y  P R O J E C T S === */
+.myProjects{
+	background-color: rgb(27, 32, 56);
+	color: white;
+}
+
+.divProjects{
+	display: flex;
+	justify-content: space-around;
+}
+
+.myProjects>.divProjects>div{
+	background-image: url("../assets/images/mainBanner.jpeg");
+	border-radius: 5px;
+	color: black;
+	height: 200px;
+	width: 185px;
+}
+
+/* === M Y  C O N T A C T S === */
+.myContacts form{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 90%;
+	max-width: 350px;
+	margin: auto;
+}
+.formInput{
+	height: 18px;
+	padding: 5px;
+	border-radius: 5px;
+} 
+textarea{
+	padding: 5px;
+	border-radius: 5px;
+    resize: none;
+	}
+
+.formBtn{
+	text-transform: uppercase;
+	padding: 3px;
+	background-color: rgb(42, 57, 115);
+}
+
+/* ======== F O O T E R */
+
+footer{
+	background-color: rgb(27, 32, 56);
+	color: white;
+}
+
+footer a{
+	text-decoration: none;
+	color: rgb(189, 204, 227); 
+}
+
+/* ======== T I P O G R A F I A */

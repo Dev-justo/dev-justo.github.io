@@ -2,8 +2,8 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
+-->
 	<link rel="stylesheet" href="css/style.css">
 	<title>João Justo</title>
 </head>
@@ -11,45 +11,86 @@
 	<div class="container">
 		<header>
 			<nav>
-				<ul>
-					<li>
-						<a href="#">home</a>
-						<a href="#">sobre mim</a>
-						<a href="#">projetos</a>
-						<a href="#">contato</a>
-					</li>
+				<ul class="navMenu">
+					<li><a href="#mainBanner">home</a></li>
+					<li><a href="#aboutMe">sobre mim</a></li>
+					<li><a href="#myProjects">projetos</a></li>
+					<li><a href="#myContacts">contato</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
 			<!-- MAIN BANNER SECTION -->
 			<section class="mainBanner" id="mainBanner">
+				<img src="assets/images/profile.png" class="profilePicture">
 				<h1>João Justo</h1>
 				<h2>Desenvolvedor fullstack</h2>
+				<p>Transformando idéias em soluções digitais inovadoras.</p>
 			</section>
-
+			
 			<!-- ABOUT ME SECTION -->
 			<section class="aboutMe" id="aboutMe">
 				<h1>Sobre mim</h1>
+				<p>
+					Minha jornada na programação começou 
+					como uma curiosidade, criando simples projetos,
+					e hoje transformo idéias em aplicações completas.
+				</p>
+				<p>
+					Com o tempo, meu objetivo na 
+					área foi se solidificando. Hoje,
+					busco transformar ideias em soluções 
+					práticas e intuitivas.
+				</p>
+				<p>
+    				Tenho experiência em <strong>front-end</strong> 
+					(HTML, CSS, JavaScript) e <strong>back-end</strong> 
+					(PHP, MySQL), sempre buscando melhorar minhas 
+    				habilidades com aprendizado constante.
+  				</p>
+				<p>
+					Se você procura um profissional 
+					dedicado e com visão inovadora,
+					vamos conversar!
+				</p>
 			</section>
-
+			
 			<!-- PROJECT SECTION -->
 			<section class="myProjects" id="myProjects">
 				<h1>Meus projetos</h1>
+				<div class="divProjects">
+					<div class="projectGame">projeto jogo</div>
+					<div class="projectCrud">projeto CRUD</div>
+					<div class="projectPage">projeto página</div>
+				</div>
 			</section>
-
+			
 			<!-- CONTACT SECTION -->
 			<section class="myContacts" id="myContacts">
-				<h1>Contato</h1>
+				<h1>Entre em contato</h1>
+				<p>Tem uma idéia ou projeto? Vamos trabalhar juntos!</p>
 				<form class="formContact">
-					<label for="name">Nome</label>
-					<input type="text" name="name" id="name" placeholder="Nome">
-					<label for="email">E-mail</label>
-					<input type="email" name="email" id="email" placeholder="E-mail">
-					<textarea name="message" id="message" placeholder="Sua mensagem aqui..."></textarea>
+					<!--<label for="name">Nome</label>-->
+					<input type="text" name="name" class="formInput" id="name" placeholder="Seu nome">
+					<!--<label for="email">E-mail</label>-->
+					<input type="email" name="email" class="formInput" id="email" placeholder="Seu e-mail">
+					<textarea 
+						name="message" 
+						id="message" 
+						placeholder="Sua mensagem"
+						rows="2"
+						></textarea>
+					<input type="submit" value="enviar" class="formBtn" id="formBtn">
 				</form>
 			</section>
 		</main>
+		<footer>
+			<p>&copy 2024 João Justo - Todos os direitos reservados.</p>
+			<p>Conecte-se comigo no <a href="#">LinkedIn</a> | 
+				<a href="#">GitHub</a> | 
+				<a href="#">Instagram</a>
+			</p>
+		</footer>
 	</div>
 </body>
 </html>
