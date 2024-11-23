@@ -2,8 +2,8 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-  	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
--->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<link rel="stylesheet" href="css/style.css">
 	<title>João Justo</title>
 </head>
@@ -69,18 +69,22 @@
 			<section class="myContacts" id="myContacts">
 				<h1>Entre em contato</h1>
 				<p>Tem uma idéia ou projeto? Vamos trabalhar juntos!</p>
-				<form class="formContact">
+				<form class="formContact" action="https://formsubmit.co/232724d5d9094316cd5de1b931c08bce" method="POST">
 					<!--<label for="name">Nome</label>-->
-					<input type="text" name="name" class="formInput" id="name" placeholder="Seu nome">
+					<input required type="text" name="name" class="formInput" id="name" placeholder="Seu nome">
 					<!--<label for="email">E-mail</label>-->
-					<input type="email" name="email" class="formInput" id="email" placeholder="Seu e-mail">
+					<input required type="email" name="email" class="formInput" id="email" placeholder="Seu e-mail">
 					<textarea 
+						required
 						name="message" 
 						id="message" 
 						placeholder="Sua mensagem"
 						rows="2"
 						></textarea>
-					<input type="submit" value="enviar" class="formBtn" id="formBtn">
+
+					<input type="hidden" name="_next" value="dev-justo.github.io">
+
+					<button type="submit" class="formBtn" id="formBtn">Enviar</button>
 				</form>
 			</section>
 		</main>

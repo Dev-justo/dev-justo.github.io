@@ -1,10 +1,10 @@
-*{margin: 0;padding: 0;}
+*{margin: 0;padding: 0;overflow-x: hidden;}
 
 /* ======== M E N U */
 header{
-	background-color: rgb(27, 32, 56);
+	background-color: rgb(4, 4, 12);
 	position: fixed;
-	width: 100vw;
+	width: 100%;
 }
 
 .navMenu{
@@ -18,6 +18,7 @@ header{
 .navMenu li{
 	display: inline-block;
 	text-decoration: none;
+	padding: 1em;
 }
 
 .navMenu li a{
@@ -36,13 +37,17 @@ body{
 .profilePicture{
 		width:150px;
 		border-radius:0 0 10px 10px;
+		margin: auto;
 	}
 
 /* ======== S E C T I O N S*/
 
 section{
 	border-bottom: 1px solid rgb(27, 32, 56);
-	padding: 50px 0;
+	min-height: 100vh;
+	padding: 50px 0; 
+	display: grid;
+	place-content: center;
 }
 
 /* === A B O U T  M E === */
@@ -87,7 +92,6 @@ section{
 textarea{
 	padding: 5px;
 	border-radius: 5px;
-    resize: none;
 	}
 
 .formBtn{
@@ -99,8 +103,12 @@ textarea{
 /* ======== F O O T E R */
 
 footer{
-	background-color: rgb(27, 32, 56);
+	background-color: rgb(4, 4, 12);
 	color: white;
+	padding: 5px;
+}
+footer p{
+	padding: 3px;
 }
 
 footer a{
